@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <script src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<style>
+  body {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12;
+  }
+
+  .title {
+    text-align: center;
+    background-color: navy;
+    color: white;
+  }
+
+  button {
+    float: left;
+    margin: 5px;
+  }
+
+  .content-section {
+    padding-top: 10px;
+    border: solid black 1px;
+    max-width: 1110px;
+  }
+
+  #topA {
+    background-color: black;
+    color: white;
+    max-width: 1110px;
+    align-content: center;
+    margin-top: 30px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="jumbotron title">
+      <h1>
+                <strong> <i class="far fa-newspaper" style="color:white;"></i> New York Times Search</strong>
+            </h1>
+    </div>
+    <div id="contact" class="content-section text-center">
+      <div class="contact-section">
+        <!-- <h1>Search </h1>
+                <hr>
+                <p></p> -->
+        <div class="row">
+          <div class="col-md-9 col-md-offset-3">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="query">Search Term:</label>
+                <input type="text" class="form-control" id="query" data="data-search">
+              </div>
+              <div class="form-group">
+                <label for="get-num">Number of Records to Retrieve:</label>
+                <input type="number" class="form-control" id="get-num" data="data-num">
+              </div>
+              <div class="form-group">
+                <label for="begin">Start Year (Optional):</label>
+                <input type="date" class="form-control" id="begin" data="data-start">
+              </div>
+              <div class="form-group">
+                <label for="end">End Year (Optional):</label>
+                <input type="date" class="form-control" id="end" data="data-end">
+              </div>
+              <button type="submit" class="btn-submit">Search</button>
+              <button type="clear" class="btn-clear">Clear Results</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="topA">
+      <h6> Top Articles </h6>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
